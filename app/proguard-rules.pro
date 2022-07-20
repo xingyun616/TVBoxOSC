@@ -163,6 +163,7 @@
 -keep class com.thoughtworks.xstream.converters.extended.RegexPatternConverter { *; }
 -keep class com.thoughtworks.xstream.converters.extended.CharsetConverter { *; }
 -keep class com.thoughtworks.xstream.** { *; }
+-keep class com.xunlei.downloadlib.** {*;}
 #eventbus
 -keepclassmembers class * {
     @org.greenrobot.eventbus.Subscribe <methods>;
