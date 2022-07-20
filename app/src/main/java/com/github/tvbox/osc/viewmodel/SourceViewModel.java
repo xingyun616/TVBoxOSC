@@ -604,7 +604,7 @@ public class SourceViewModel extends ViewModel {
                             str = new String[]{urlInfo.urls};
                         }
                         List<Movie.Video.UrlBean.UrlInfo.InfoBean> infoBeanList = new ArrayList<>();
-                        for (String s : str) {
+                       for (String s : str) {
     String[] ss = s.split("\\$");
     if (ss.length > 0) {
         if (ss.length == 2) {
@@ -614,15 +614,6 @@ public class SourceViewModel extends ViewModel {
         }
     }
 }
-                        for (String s : str) {
-                            if (s.contains("$")) {
-                                String[] ss = s.split("\\$");
-                                if (ss.length >= 2) {
-                                    infoBeanList.add(new Movie.Video.UrlBean.UrlInfo.InfoBean(ss[0], ss[1]));
-                                }
-                                //infoBeanList.add(new Movie.Video.UrlBean.UrlInfo.InfoBean(s.substring(0, s.indexOf("$")), s.substring(s.indexOf("$") + 1)));
-                            }
-                        }
                         urlInfo.beanList = infoBeanList;
                     }
                 }
